@@ -15,6 +15,12 @@ parser.add_argument(
 
 args = parser.parse_args( )
 
+fh = open(args.data_file)
+
+lines = 0
+words = 0
+chars = 0
+
 #-------------------------------------------------------------------------------
 # our code for analyzing the data
 #-------------------------------------------------------------------------------
