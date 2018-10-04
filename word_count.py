@@ -5,8 +5,8 @@ import argparse
 parser = argparse.ArgumentParser( description="" )
 
 parser.add_argument(
-	"arg",
-	help="what does this do?",
+	"data_file",
+	help="path to the file we want to read",
 )
 
 #-------------------------------------------------------------------------------
