@@ -19,8 +19,8 @@ What is the output of the `git branch` command?
 
 How can you tell which branch you're on?
 ----------
-The branch you're one used be indicated with an "*"
-after running the `git branch` command (see above)
+The branch you're one will be indicated with an "*" 
+in the output after running the `git branch` command (see above).
 ----------
 
 QUESTION 2:
