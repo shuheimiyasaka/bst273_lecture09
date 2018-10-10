@@ -46,7 +46,9 @@ parser.add_argument(
 	"data_file",
 	help="path to the file we want to read",
 )
-
+parser.add_argument("-c", "--chars", action="store_true")
+parser.add_argument("-w", "--words", action="store_true")
+parser.add_argument("-l", "--lines", action="store_true")
 #-------------------------------------------------------------------------------
 # Are there other arguments we need?
 #-------------------------------------------------------------------------------
@@ -61,6 +63,22 @@ chars = 0
 
 for line in fh:
 	lines += 1
+	chars = chars + len(line)
+	words_in_line = line.split()
+	words = words + len(words_in_line)
+fh.close( )
+
+if (args.chars is False and 
+	args.words is False and 
+	args.lines is False):
+	# default case
+	print("    ", lines, "  ", words, " ", chars)
+elif args.chars is True:
+	print(chars)
+elif args.words is True:
+	print(words)
+elif args.lines is True:
+	print(lines)
 
 	# ## Question 4a (2 pts)
 	#
@@ -138,6 +156,3 @@ for line in fh:
 	# **Hint:** - even though this question is at the end of the homework script,
 	# you probably need to add some stuff to the beginning of the script too.
 
-
-
-print("   ", lines)
