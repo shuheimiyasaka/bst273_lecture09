@@ -19,20 +19,21 @@ What is the output of the `git branch` command?
 
 How can you tell which branch you're on?
 ----------
-<type answer here>
+The branch you're one used be indicated with an "*"
+after running the `git branch` command (see above)
 ----------
 
 QUESTION 2:
 
 ----------
-$ <enter command here>
-<enter output here>
+$ git remote get-url origin
+https://github.com/shuheimiyasaka/bst273_lecture09.git
 ----------
 
 QUESTION 3:
 
 ----------
-$ git remote add <What goes here?>
+$ git remote add kevin https://github.com/kescobo/bst273_lecture09.git
 ----------
 
 """
